@@ -1,0 +1,741 @@
+[
+    {
+        "id": "REASONING_006",
+        "category": "reasoning",
+        "difficulty": "hard",
+        "question": "You have three boxes. One contains only apples, one contains only oranges, and one contains both apples and oranges. Each box is labeled, but every label is wrong. You draw one piece of fruit from the box labeled 'Apples and Oranges' and it is an apple. What are the correct contents of each box?",
+        "expected_answer": {
+            "Apples and Oranges": "only apples",
+            "Apples": "only oranges",
+            "Oranges": "both apples and oranges"
+        },
+        "evaluation_type": "rule_based",
+        "capability_tested": "Complex constraint satisfaction"
+    },
+    {
+        "id": "TEST_EXACT_001",
+        "category": "development",
+        "difficulty": "easy",
+        "question": "What is the capital of France? Answer with only the city name.",
+        "expected_answer": "Paris",
+        "evaluation_type": "exact_match",
+        "capability_tested": "Exact answer generation"
+    },
+    {
+        "id": "TEST_EXACT_002",
+        "category": "development",
+        "difficulty": "easy",
+        "question": "What is the capital of Japan? Answer with only the city name.",
+        "expected_answer": "Tokyo",
+        "evaluation_type": "exact_match",
+        "capability_tested": "Exact answer generation"
+    },
+     
+  {
+     "id": "TEST_NUM_001",
+     "category": "development",
+     "difficulty": "easy",
+     "question": "What is 15 × 8? Answer with only the number.",
+     "expected_answer": 120,
+     "evaluation_type": "numerical",
+     "capability_tested": "Basic arithmetic"
+   },
+
+   {
+    "id": "TEST_CODE_001",
+    "category": "development",
+    "difficulty": "easy",
+    "question": "Write a Python function named `find_max` that takes a list of numbers and returns the largest number in the list. Return only the Python code.",
+    "expected_answer": null,
+    "evaluation_type": "code_execution",
+    "capability_tested": "Basic Python programming",
+    "evaluation_config": {
+        "function_name": "find_max",
+        "test_cases": [
+            {
+                "input": [3, 7, 2, 9],
+                "expected": 9
+            },
+            {
+                "input": [10, 5, 8],
+                "expected": 10
+            },
+            {
+                "input": [-5, -2, -9],
+                "expected": -2
+            }
+        ]
+    }
+},
+
+{
+    "id": "REASONING_001",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "A farmer has chickens and cows. There are 20 heads and 56 legs in total. How many chickens and how many cows are there?",
+    "expected_answer": "12 chickens and 8 cows",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Constraint-based arithmetic reasoning"
+},
+{
+    "id": "REASONING_002",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "Five people—A, B, C, D, and E—are standing in a line. A is before B. C is after D. E is before A. Which of the following could be the order from first to last? Answer with only the valid order: A) A E B D C  B) E A D C B  C) D C E A B  D) E B A D C",
+    "expected_answer": "E A D C B",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Ordering and constraint reasoning"
+},
+{
+    "id": "REASONING_003",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "All engineers are problem solvers. Some problem solvers are musicians. Can we conclude that some engineers are musicians? Answer only YES or NO.",
+    "expected_answer": "NO",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Logical implication"
+},
+{
+    "id": "REASONING_004",
+    "category": "reasoning",
+    "difficulty": "easy",
+    "question": "What number comes next in the sequence: 2, 6, 12, 20, 30, ? Answer with only the number.",
+    "expected_answer": 42,
+    "evaluation_type": "numerical",
+    "capability_tested": "Pattern recognition"
+},
+{
+    "id": "REASONING_005",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "If it rains, the ground becomes wet. The ground is not wet. What can be logically concluded? Answer only: RAINED or DID NOT RAIN.",
+    "expected_answer": "DID NOT RAIN",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Conditional reasoning"
+},
+
+{
+    "id": "REASONING_007",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "A person walks 5 km north, then 5 km east, then 5 km south. In which direction is the person from the starting point? Answer with only the direction.",
+    "expected_answer": "east",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Spatial reasoning"
+},
+{
+    "id": "REASONING_008",
+    "category": "reasoning",
+    "difficulty": "medium",
+    "question": "In a class, every student who studies mathematics also studies physics. Ravi studies mathematics. What must be true? Answer only: Ravi studies physics or Ravi does not study physics.",
+    "expected_answer": "Ravi studies physics",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Deductive reasoning"
+},
+{
+    "id": "REASONING_009",
+    "category": "reasoning",
+    "difficulty": "hard",
+    "question": "Three boxes contain 10, 20, and 30 balls respectively. You move 5 balls from the third box to the first box, then move 10 balls from the second box to the third box. How many balls are in the first box, second box, and third box respectively? Answer in the format: first, second, third.",
+    "expected_answer": "15, 10, 40",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Multi-step state tracking"
+},
+{
+    "id": "REASONING_010",
+    "category": "reasoning",
+    "difficulty": "hard",
+    "question": "A statement says: 'All cats are black.' Another statement says: 'Some cats are not black.' Are these two statements logically consistent? Answer only YES or NO.",
+    "expected_answer": "NO",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Contradiction detection"
+},
+{
+    "id": "CODING_001",
+    "category": "coding",
+    "difficulty": "easy",
+    "question": "Write a Python function called is_even(n) that returns True if n is even and False otherwise.",
+    "expected_answer": "A Python function named is_even",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Basic function implementation",
+    "evaluation_config": {
+        "function_name": "is_even",
+        "test_cases": [
+            {"input": 2, "expected": true},
+            {"input": 7, "expected": false},
+            {"input": 0, "expected": true},
+            {"input": -4, "expected": true}
+        ]
+    }
+},
+{
+    "id": "CODING_002",
+    "category": "coding",
+    "difficulty": "easy",
+    "question": "Write a Python function called reverse_string(s) that returns the input string reversed.",
+    "expected_answer": "A Python function named reverse_string",
+    "evaluation_type": "code_execution",
+    "capability_tested": "String manipulation",
+    "evaluation_config": {
+        "function_name": "reverse_string",
+        "test_cases": [
+            {"input": "hello", "expected": "olleh"},
+            {"input": "Python", "expected": "nohtyP"},
+            {"input": "a", "expected": "a"},
+            {"input": "", "expected": ""}
+        ]
+    }
+},
+{
+    "id": "CODING_003",
+    "category": "coding",
+    "difficulty": "easy",
+    "question": "Write a Python function called sum_positive(numbers) that returns the sum of all positive numbers in a list. Zero should not contribute to the sum.",
+    "expected_answer": "A Python function named sum_positive",
+    "evaluation_type": "code_execution",
+    "capability_tested": "List processing",
+    "evaluation_config": {
+        "function_name": "sum_positive",
+        "test_cases": [
+            {"input": [1, -2, 3, -4, 5], "expected": 9},
+            {"input": [-1, -2, -3], "expected": 0},
+            {"input": [0, 5, 0, 2], "expected": 7},
+            {"input": [], "expected": 0}
+        ]
+    }
+},
+{
+    "id": "CODING_004",
+    "category": "coding",
+    "difficulty": "medium",
+    "question": "Write a Python function called char_frequency(s) that returns a dictionary containing the frequency of every character in the string.",
+    "expected_answer": "A Python function named char_frequency",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Dictionary and frequency counting",
+    "evaluation_config": {
+        "function_name": "char_frequency",
+        "test_cases": [
+            {"input": "hello", "expected": {"h": 1, "e": 1, "l": 2, "o": 1}},
+            {"input": "aaa", "expected": {"a": 3}},
+            {"input": "", "expected": {}},
+            {"input": "ab ba", "expected": {"a": 2, "b": 2, " ": 1}}
+        ]
+    }
+},
+{
+    "id": "CODING_005",
+    "category": "coding",
+    "difficulty": "medium",
+    "question": "Write a Python function called second_largest(numbers) that returns the second largest distinct number in a list. Assume the list contains at least two distinct values.",
+    "expected_answer": "A Python function named second_largest",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Edge-case handling and list logic",
+    "evaluation_config": {
+        "function_name": "second_largest",
+        "test_cases": [
+            {"input": [10, 5, 8, 10, 3], "expected": 8},
+            {"input": [1, 2], "expected": 1},
+            {"input": [-1, -5, -2], "expected": -2},
+            {"input": [7, 7, 6, 6, 5], "expected": 6}
+        ]
+    }
+},
+{
+    "id": "CODING_006",
+    "category": "coding",
+    "difficulty": "medium",
+    "question": "Write a Python function called binary_search(numbers, target) that returns the index of target in a sorted list, or -1 if target is not present.",
+    "expected_answer": "A Python function named binary_search",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Searching algorithm",
+    "multiple_args": true,
+    "evaluation_config": {
+        "function_name": "binary_search",
+       "test_cases": [
+    {
+        "input": [[1, 3, 5, 7, 9], 5],
+        "expected": 2,
+        "multiple_args": true
+    },
+    {
+        "input": [[1, 3, 5, 7, 9], 1],
+        "expected": 0,
+        "multiple_args": true
+    },
+    {
+        "input": [[1, 3, 5, 7, 9], 9],
+        "expected": 4,
+        "multiple_args": true
+    },
+    {
+        "input": [[1, 3, 5, 7, 9], 4],
+        "expected": -1,
+        "multiple_args": true
+    }
+] 
+    }
+},
+{
+    "id": "CODING_007",
+    "category": "coding",
+    "difficulty": "medium",
+    "question": "Write a Python function called sort_by_length(words) that returns the words sorted in ascending order of their length. Preserve the original order when two words have the same length.",
+    "expected_answer": "A Python function named sort_by_length",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Sorting and custom logic",
+    "evaluation_config": {
+        "function_name": "sort_by_length",
+        "test_cases": [
+            {
+                "input": ["apple", "a", "banana", "cat"],
+                "expected": ["a", "cat", "apple", "banana"]
+            },
+            {
+                "input": ["bb", "a", "cc", "ddd"],
+                "expected": ["a", "bb", "cc", "ddd"]
+            },
+            {
+                "input": [],
+                "expected": []
+            }
+        ]
+    }
+},
+{
+    "id": "CODING_008",
+    "category": "coding",
+    "difficulty": "medium",
+    "question": "Write a recursive Python function called factorial(n) that returns n factorial. Assume n is a non-negative integer.",
+    "expected_answer": "A recursive Python function named factorial",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Recursion",
+    "evaluation_config": {
+        "function_name": "factorial",
+        "test_cases": [
+            {"input": 0, "expected": 1},
+            {"input": 1, "expected": 1},
+            {"input": 5, "expected": 120},
+            {"input": 7, "expected": 5040}
+        ]
+    }
+},
+{
+    "id": "CODING_009",
+    "category": "coding",
+    "difficulty": "hard",
+    "question": "The following function is intended to return the number of vowels in a string, but it contains a bug. Fix the function so that it works correctly for uppercase and lowercase letters.\n\n```python\ndef count_vowels(s):\n    count = 0\n    for char in s:\n        if char in 'aeiou':\n            count += 1\n    return count\n```\n\nReturn the corrected Python function.",
+    "expected_answer": "A corrected Python function named count_vowels",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Debugging and case handling",
+    "evaluation_config": {
+        "function_name": "count_vowels",
+        "test_cases": [
+            {"input": "hello", "expected": 2},
+            {"input": "HELLO", "expected": 2},
+            {"input": "Python Programming", "expected": 4},
+            {"input": "xyz", "expected": 0}
+        ]
+    }
+},
+{
+    "id": "CODING_010",
+    "category": "coding",
+    "difficulty": "hard",
+    "question": "Write a Python function called remove_duplicates(numbers) that removes duplicate values from a list while preserving the order of their first occurrence.",
+    "expected_answer": "A Python function named remove_duplicates",
+    "evaluation_type": "code_execution",
+    "capability_tested": "Algorithmic reasoning and order preservation",
+    "evaluation_config": {
+        "function_name": "remove_duplicates",
+        "test_cases": [
+            {"input": [1, 2, 2, 3, 1, 4], "expected": [1, 2, 3, 4]},
+            {"input": [5, 5, 5], "expected": [5]},
+            {"input": [], "expected": []},
+            {"input": [3, 1, 3, 2, 1], "expected": [3, 1, 2]}
+        ]
+    }
+},
+
+{
+    "id": "MATHEMATICS_001",
+    "category": "mathematics",
+    "difficulty": "easy",
+    "question": "Calculate: 247 + 358 - 129. Answer with only the number.",
+    "expected_answer": 476,
+    "evaluation_type": "numerical",
+    "capability_tested": "Basic arithmetic"
+},
+{
+    "id": "MATHEMATICS_002",
+    "category": "mathematics",
+    "difficulty": "easy",
+    "question": "A shirt costs $80 and is discounted by 25%. What is the final price? Answer with only the number.",
+    "expected_answer": 60,
+    "evaluation_type": "numerical",
+    "capability_tested": "Percentage calculation"
+},
+{
+    "id": "MATHEMATICS_003",
+    "category": "mathematics",
+    "difficulty": "easy",
+    "question": "The ratio of boys to girls in a class is 3:5. If there are 24 boys, how many girls are there? Answer with only the number.",
+    "expected_answer": 40,
+    "evaluation_type": "numerical",
+    "capability_tested": "Ratio reasoning"
+},
+{
+    "id": "MATHEMATICS_004",
+    "category": "mathematics",
+    "difficulty": "medium",
+    "question": "Solve for x: 3x + 7 = 25. Answer with only the number.",
+    "expected_answer": 6,
+    "evaluation_type": "numerical",
+    "capability_tested": "Linear equation solving"
+},
+{
+    "id": "MATHEMATICS_005",
+    "category": "mathematics",
+    "difficulty": "medium",
+    "question": "A fair six-sided die is rolled once. What is the probability of rolling a number greater than 4? Express the answer as a decimal.",
+    "expected_answer": 0.3333333333333333,
+    "evaluation_type": "numerical",
+    "capability_tested": "Probability"
+},
+{
+    "id": "MATHEMATICS_006",
+    "category": "mathematics",
+    "difficulty": "easy",
+    "question": "A rectangle has a length of 12 cm and a width of 7 cm. What is its area in square centimeters? Answer with only the number.",
+    "expected_answer": 84,
+    "evaluation_type": "numerical",
+    "capability_tested": "Geometry"
+},
+{
+    "id": "MATHEMATICS_007",
+    "category": "mathematics",
+    "difficulty": "medium",
+    "question": "Find the mean of the following numbers: 12, 18, 20, 25, 30. Answer with only the number.",
+    "expected_answer": 21,
+    "evaluation_type": "numerical",
+    "capability_tested": "Mean and descriptive statistics"
+},
+{
+    "id": "MATHEMATICS_008",
+    "category": "mathematics",
+    "difficulty": "medium",
+    "question": "A train travels 180 km in 3 hours. At the same speed, how far will it travel in 5 hours? Answer with only the number in kilometers.",
+    "expected_answer": 300,
+    "evaluation_type": "numerical",
+    "capability_tested": "Rate and proportional reasoning"
+},
+{
+    "id": "MATHEMATICS_009",
+    "category": "mathematics",
+    "difficulty": "medium",
+    "question": "What number comes next in the sequence: 3, 7, 15, 31, 63, ? Answer with only the number.",
+    "expected_answer": 127,
+    "evaluation_type": "numerical",
+    "capability_tested": "Sequence reasoning"
+},
+{
+    "id": "MATHEMATICS_010",
+    "category": "mathematics",
+    "difficulty": "hard",
+    "question": "A shopkeeper buys an item for $500. He marks it up by 20% and then gives a 10% discount on the marked price. What is the final selling price? Answer with only the number.",
+    "expected_answer": 540,
+    "evaluation_type": "numerical",
+    "capability_tested": "Multi-step percentage reasoning"
+},
+{
+    "id": "KNOWLEDGE_001",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for gold? Answer with only the symbol.",
+    "expected_answer": "Au",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Scientific factual recall"
+},
+{
+    "id": "KNOWLEDGE_002",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "What is the capital city of Australia? Answer with only the city name.",
+    "expected_answer": "Canberra",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Geographical factual recall"
+},
+{
+    "id": "KNOWLEDGE_003",
+    "category": "knowledge",
+    "difficulty": "medium",
+    "question": "Which data structure follows the Last-In, First-Out (LIFO) principle? Answer with only the data structure name.",
+    "expected_answer": "Stack",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Computer science knowledge"
+},
+{
+    "id": "KNOWLEDGE_004",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "Which organelle is primarily responsible for producing ATP in eukaryotic cells? Answer with only the organelle name.",
+    "expected_answer": "Mitochondria",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Biological factual recall"
+},
+{
+    "id": "KNOWLEDGE_005",
+    "category": "knowledge",
+    "difficulty": "medium",
+    "question": "What is the SI unit of electric resistance? Answer with only the unit name.",
+    "expected_answer": "ohm",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Physics knowledge"
+},
+{
+    "id": "KNOWLEDGE_006",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "Which ancient civilization built Machu Picchu? Answer with only the civilization name.",
+    "expected_answer": "Inca",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Historical factual recall"
+},
+{
+    "id": "KNOWLEDGE_007",
+    "category": "knowledge",
+    "difficulty": "medium",
+    "question": "What is the time complexity of binary search on a sorted array? Answer using Big-O notation only.",
+    "expected_answer": "O(log n)",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Algorithmic knowledge"
+},
+{
+    "id": "KNOWLEDGE_008",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "What is the largest planet in our Solar System? Answer with only the planet name.",
+    "expected_answer": "Jupiter",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Astronomical factual recall"
+},
+{
+    "id": "KNOWLEDGE_009",
+    "category": "knowledge",
+    "difficulty": "medium",
+    "question": "In machine learning, what type of learning uses labeled training data? Answer with only the learning type.",
+    "expected_answer": "Supervised learning",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Machine learning knowledge"
+},
+{
+    "id": "KNOWLEDGE_010",
+    "category": "knowledge",
+    "difficulty": "easy",
+    "question": "What is the chemical formula for water? Answer with only the formula.",
+    "expected_answer": "H2O",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Chemistry factual recall"
+},
+{
+    "id": "INSTRUCTION_001",
+    "category": "instruction_following",
+    "difficulty": "easy",
+    "question": "Return exactly three programming languages. Do not include any explanation. Format: language1, language2, language3",
+    "expected_answer": "Python, Java, C++",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Exact output constraint"
+},
+{
+    "id": "INSTRUCTION_002",
+    "category": "instruction_following",
+    "difficulty": "easy",
+    "question": "Answer the question with only YES or NO. Is Python a programming language?",
+    "expected_answer": "YES",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Restricted response format"
+},
+{
+    "id": "INSTRUCTION_003",
+    "category": "instruction_following",
+    "difficulty": "easy",
+    "question": "Write exactly five words describing machine learning. Do not use punctuation.",
+    "expected_answer": "Learning patterns from complex data",
+    "evaluation_type": "rule_based",
+    "capability_tested": "Word-count constraint",
+    "evaluation_config": {
+        "rule": "exact_word_count",
+        "word_count": 5
+    }
+},
+{
+    "id": "INSTRUCTION_004",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "question": "Return exactly two bullet points. Each bullet point must start with '-'. Do not write anything else.",
+    "expected_answer": "- First point\n- Second point",
+    "evaluation_type": "rule_based",
+    "capability_tested": "Structural formatting",
+    "evaluation_config": {
+        "rule": "bullet_count",
+        "count": 2
+    }
+},
+{
+    "id": "INSTRUCTION_005",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "question": "Return a JSON object containing exactly these two keys: name and age. Use the values name='Alice' and age=25. Do not include any other keys.",
+    "expected_answer": "{\"name\":\"Alice\",\"age\":25}",
+    "evaluation_type": "schema_validation",
+    "capability_tested": "JSON schema compliance",
+    "evaluation_config": {
+        "required_keys": ["name", "age"],
+        "allowed_keys": ["name", "age"]
+    }
+},
+{
+    "id": "INSTRUCTION_006",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "question": "Return the following words in alphabetical order and separated by commas: banana, apple, cherry.",
+    "expected_answer": "apple, banana, cherry",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Transformation instruction"
+},
+{
+    "id": "INSTRUCTION_007",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "question": "Return only the number of words in this sentence: 'Machine learning is useful.'",
+    "expected_answer": "4",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Instruction-constrained computation"
+},
+{
+    "id": "INSTRUCTION_008",
+    "category": "instruction_following",
+    "difficulty": "hard",
+    "question": "Return a JSON object with exactly three keys: name, role, and experience. Use name='Alex', role='Engineer', and experience=2.",
+    "expected_answer": "{\"name\":\"Alex\",\"role\":\"Engineer\",\"experience\":2}",
+    "evaluation_type": "schema_validation",
+    "capability_tested": "Multi-field structured output",
+    "evaluation_config": {
+        "required_keys": ["name", "role", "experience"],
+        "allowed_keys": ["name", "role", "experience"]
+    }
+},
+{
+    "id": "INSTRUCTION_009",
+    "category": "instruction_following",
+    "difficulty": "hard",
+    "question": "Return exactly one sentence containing the words artificial intelligence, machine learning, and neural network. Do not use a colon.",
+    "expected_answer": "Artificial intelligence includes machine learning and neural networks.",
+    "evaluation_type": "rule_based",
+    "capability_tested": "Multiple simultaneous constraints",
+    "evaluation_config": {
+        "rule": "instruction_constraints"
+    }
+},
+{
+    "id": "INSTRUCTION_010",
+    "category": "instruction_following",
+    "difficulty": "hard",
+    "question": "Return exactly three lines. Line 1 must be 'Name: Alice'. Line 2 must be 'Age: 25'. Line 3 must be 'Role: Engineer'. Do not add anything else.",
+    "expected_answer": "Name: Alice\nAge: 25\nRole: Engineer",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Strict multi-line formatting"
+},
+
+{
+    "id": "HALLUCINATION_001",
+    "category": "hallucination_resistance",
+    "difficulty": "easy",
+    "question": "Context: Alice submitted the project report on Monday. Question: What grade did Alice receive for the project? Answer only with the grade or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported personal information"
+},
+{
+    "id": "HALLUCINATION_002",
+    "category": "hallucination_resistance",
+    "difficulty": "easy",
+    "question": "Context: The company was founded sometime between 2010 and 2020. Question: In which exact year was the company founded? Answer only with the year or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported dates"
+},
+{
+    "id": "HALLUCINATION_003",
+    "category": "hallucination_resistance",
+    "difficulty": "medium",
+    "question": "Context: A box contains some red and blue balls, but the exact numbers of each color are not given. Question: How many red balls are in the box? Answer only with the number or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported numerical claims"
+},
+{
+    "id": "HALLUCINATION_004",
+    "category": "hallucination_resistance",
+    "difficulty": "easy",
+    "question": "Context: Ravi traveled to another city for a conference. The city is not specified. Question: Which city did Ravi visit? Answer only with the city or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported locations"
+},
+{
+    "id": "HALLUCINATION_005",
+    "category": "hallucination_resistance",
+    "difficulty": "medium",
+    "question": "Context: Sales increased after the company launched a new website. No information is provided about why sales increased. Question: Did the new website definitely cause the increase in sales? Answer only YES, NO, or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported causal conclusions"
+},
+{
+    "id": "HALLUCINATION_006",
+    "category": "hallucination_resistance",
+    "difficulty": "medium",
+    "question": "Context: Two people named Alex work at a company. One Alex is an engineer and the other Alex is a designer. Question: Which Alex created the company's website? The context does not specify this. Answer only with 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Handling ambiguous identities"
+},
+{
+    "id": "HALLUCINATION_007",
+    "category": "hallucination_resistance",
+    "difficulty": "medium",
+    "question": "Context: Researchers conducted an experiment comparing two treatments. The experiment description does not provide the results. Question: Which treatment was more effective? Answer only with the treatment name or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported experimental conclusions"
+},
+{
+    "id": "HALLUCINATION_008",
+    "category": "hallucination_resistance",
+    "difficulty": "medium",
+    "question": "Context: Company X has offices in several countries, but the provided information does not list their locations. Question: Does Company X have an office in India? Answer only YES, NO, or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported organizational facts"
+},
+{
+    "id": "HALLUCINATION_009",
+    "category": "hallucination_resistance",
+    "difficulty": "hard",
+    "question": "Context: A historical document states that a battle occurred in 1857 but does not identify the winner. Question: Which side won the battle? Answer only with the side or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Avoiding unsupported historical claims"
+},
+{
+    "id": "HALLUCINATION_010",
+    "category": "hallucination_resistance",
+    "difficulty": "hard",
+    "question": "Context: A medical study reports that 500 participants were observed for one year, but the provided summary does not state whether the treatment was effective. Question: Was the treatment effective? Answer only YES, NO, or 'Not enough information'.",
+    "expected_answer": "Not enough information",
+    "evaluation_type": "exact_match",
+    "capability_tested": "Recognizing insufficient evidence"
+}
+
+
+]
